@@ -1,0 +1,17 @@
+C:\Users\Luca Cattaneo\Desktop\Gestione Attivita\Gestione Attivita\bin\Debug\Gestione Attivita.exe.config
+C:\Users\Luca Cattaneo\Desktop\Gestione Attivita\Gestione Attivita\bin\Debug\Gestione Attivita.exe
+C:\Users\Luca Cattaneo\Desktop\Gestione Attivita\Gestione Attivita\bin\Debug\Gestione Attivita.pdb
+C:\Users\Luca Cattaneo\Desktop\Gestione Attivita\Gestione Attivita\obj\Debug\Gestione Attivita.csprojAssemblyReference.cache
+C:\Users\Luca Cattaneo\Desktop\Gestione Attivita\Gestione Attivita\obj\Debug\MainWindow.g.cs
+C:\Users\Luca Cattaneo\Desktop\Gestione Attivita\Gestione Attivita\obj\Debug\App.g.cs
+C:\Users\Luca Cattaneo\Desktop\Gestione Attivita\Gestione Attivita\obj\Debug\Gestione Attivita_MarkupCompile.cache
+C:\Users\Luca Cattaneo\Desktop\Gestione Attivita\Gestione Attivita\obj\Debug\Gestione Attivita_MarkupCompile.lref
+C:\Users\Luca Cattaneo\Desktop\Gestione Attivita\Gestione Attivita\obj\Debug\MainWindow.baml
+C:\Users\Luca Cattaneo\Desktop\Gestione Attivita\Gestione Attivita\obj\Debug\Gestione Attivita.g.resources
+C:\Users\Luca Cattaneo\Desktop\Gestione Attivita\Gestione Attivita\obj\Debug\Gestione_Attivita.Properties.Resources.resources
+C:\Users\Luca Cattaneo\Desktop\Gestione Attivita\Gestione Attivita\obj\Debug\Gestione Attivita.csproj.GenerateResource.cache
+C:\Users\Luca Cattaneo\Desktop\Gestione Attivita\Gestione Attivita\obj\Debug\Gestione Attivita.csproj.CoreCompileInputs.cache
+C:\Users\Luca Cattaneo\Desktop\Gestione Attivita\Gestione Attivita\obj\Debug\Gestione Attivita.exe
+C:\Users\Luca Cattaneo\Desktop\Gestione Attivita\Gestione Attivita\obj\Debug\Gestione Attivita.pdb
+C:\Users\Luca Cattaneo\Desktop\Gestione Attivita\Gestione Attivita\bin\Debug\OpenHardwareMonitorLib.dll
+C:\Users\Luca Cattaneo\Desktop\Gestione Attivita\Gestione Attivita\obj\Debug\Gestione Attivita.csproj.CopyComplete
