@@ -5,10 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gestione_Attivita"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Label x:Name="a" Content="" HorizontalAlignment="Left" Margin="140,115,0,0" VerticalAlignment="Top" Height="155" Width="505"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="270,370,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-
-    </Grid>
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid/>
 </Window>

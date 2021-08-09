@@ -28,11 +28,15 @@ namespace Gestione_Attivita
         {
             InitializeComponent();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            Gestore g = new Gestore();
+            g.Activate();
+            g.Show();
+            Hide();
+        }
         //https://www.youtube.com/watch?v=Lg_geJrATrc&ab_channel=FoxLearn tutorial https://stackoverflow.com/questions/1195112/how-can-i-get-the-cpu-temperature http://www.lattepanda.com/topic-f11t3004.html
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }
