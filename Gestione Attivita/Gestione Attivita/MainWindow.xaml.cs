@@ -32,7 +32,6 @@ namespace Gestione_Attivita
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             Gestore g = new Gestore();
-            g.Activate();
             g.Show();
             Hide();
         }

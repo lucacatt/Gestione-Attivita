@@ -35,3 +35,4 @@ L:\github\Gestione-Attivita\Gestione Attivita\Gestione Attivita\obj\Debug\Gestio
 L:\github\Gestione-Attivita\Gestione Attivita\Gestione Attivita\obj\Debug\Gestione Attivita.exe
 L:\github\Gestione-Attivita\Gestione Attivita\Gestione Attivita\obj\Debug\Gestione Attivita.pdb
 L:\github\Gestione-Attivita\Gestione Attivita\Gestione Attivita\obj\Debug\Gestione_Attivita.Gestore.resources
+L:\github\Gestione-Attivita\Gestione Attivita\Gestione Attivita\obj\Debug\Gestione_Attivita.Ram.resources
