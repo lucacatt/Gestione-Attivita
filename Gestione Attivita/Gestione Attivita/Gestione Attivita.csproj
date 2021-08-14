@@ -77,6 +77,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Disco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Disco.Designer.cs">
+      <DependentUpon>Disco.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ram.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Disco.resx">
+      <DependentUpon>Disco.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Gestore.resx">
       <DependentUpon>Gestore.cs</DependentUpon>
     </EmbeddedResource>

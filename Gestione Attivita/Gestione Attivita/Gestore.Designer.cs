@@ -41,6 +41,7 @@ namespace Gestione_Attivita
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.gradi = new MetroFramework.Controls.MetroLabel();
             this.btnRam = new MetroFramework.Controls.MetroButton();
+            this.btnDisco = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.pCPU)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
@@ -114,11 +115,22 @@ namespace Gestione_Attivita
             this.btnRam.UseSelectable = true;
             this.btnRam.Click += new System.EventHandler(this.btnRam_Click);
             // 
+            // btnDisco
+            // 
+            this.btnDisco.Location = new System.Drawing.Point(530, 388);
+            this.btnDisco.Name = "btnDisco";
+            this.btnDisco.Size = new System.Drawing.Size(75, 23);
+            this.btnDisco.TabIndex = 6;
+            this.btnDisco.Text = "Disco";
+            this.btnDisco.UseSelectable = true;
+            this.btnDisco.Click += new System.EventHandler(this.btnDisco_Click_1);
+            // 
             // Gestore
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(787, 448);
+            this.Controls.Add(this.btnDisco);
             this.Controls.Add(this.btnRam);
             this.Controls.Add(this.gradi);
             this.Controls.Add(this.chart1);
@@ -144,5 +156,6 @@ namespace Gestione_Attivita
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private MetroFramework.Controls.MetroLabel gradi;
         private MetroFramework.Controls.MetroButton btnRam;
+        private MetroFramework.Controls.MetroButton btnDisco;
     }
 }

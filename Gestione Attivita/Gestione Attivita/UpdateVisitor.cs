@@ -146,5 +146,16 @@ namespace Gestione_Attivita
             }
             return tutto;
         }
+        public static string GetRamInfo()
+        {
+            string tutto = "";
+            ManagementObjectSearcher searcher12 = new ManagementObjectSearcher("root\\CIMV2", "SELECT * FROM Win32_PhysicalMemory");
+            foreach (ManagementObject queryObj in searcher12.Get())
+            {
+                tutto += "BankLabel: " + queryObj["BankLabel"] + "\n" + " Capacity: " + Math.Round(System.Convert.ToDouble(queryObj["Capacity"]) / 1024 / 1024 / 1024, 2) + "\n" + "Speed: " +
+                                   queryObj["Speed"] + "\n" + "Manufacturer: " + queryObj["Manufacturer"] + "\n" + "Serial Number: " + queryObj["Name"] + "\n";
+            }
+            return tutto;
+        }
     }
 }

@@ -14,6 +14,7 @@ namespace Gestione_Attivita
     public partial class Gestore : MetroFramework.Forms.MetroForm
     {
         Thread t;
+        string g = "";
         public Gestore()
         {
             InitializeComponent();
@@ -21,7 +22,7 @@ namespace Gestione_Attivita
         void start()
         {
             while (true)
-                gradi.Text = UpdateVisitor.GetCpuInfo();
+                g = UpdateVisitor.GetCpuInfo();
         }
 
         private void timer_Tick(object sender, EventArgs e)
@@ -30,17 +31,26 @@ namespace Gestione_Attivita
             metroProgressBarCpu.Value = (int)fcpu;
             lblCpu.Text = string.Format("{0:0.00}%", fcpu);
             chart1.Series["CPU"].Points.AddY(fcpu);
+            gradi.Text = g;
         }
 
         private void Gestore_Load(object sender, EventArgs e)
         {
+            timer.Start();
             t = new Thread(start);
             t.Start();
-            timer.Start();
         }
         private void btnRam_Click(object sender, EventArgs e)
         {
             Ram r = new Ram();
+            t.Abort();
+            Close();
+            r.Show();
+        }
+        private void btnDisco_Click_1(object sender, EventArgs e)
+        {
+            Disco r = new Disco();
+            t.Abort();
             Close();
             r.Show();
         }
