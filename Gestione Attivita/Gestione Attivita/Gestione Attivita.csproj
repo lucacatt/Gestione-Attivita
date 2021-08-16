@@ -83,6 +83,12 @@
     <Compile Include="Disco.Designer.cs">
       <DependentUpon>Disco.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gpu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gpu.Designer.cs">
+      <DependentUpon>Gpu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ram.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Gestore.resx">
       <DependentUpon>Gestore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gpu.resx">
+      <DependentUpon>Gpu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

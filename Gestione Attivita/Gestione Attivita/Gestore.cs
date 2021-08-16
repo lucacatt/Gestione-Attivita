@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -50,6 +51,14 @@ namespace Gestione_Attivita
         private void btnDisco_Click_1(object sender, EventArgs e)
         {
             Disco r = new Disco();
+            t.Abort();
+            Close();
+            r.Show();
+        }
+
+        private void btnGpu_Click(object sender, EventArgs e)
+        {
+            Gpu r = new Gpu();
             t.Abort();
             Close();
             r.Show();

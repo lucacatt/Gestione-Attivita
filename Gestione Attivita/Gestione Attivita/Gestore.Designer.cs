@@ -42,6 +42,7 @@ namespace Gestione_Attivita
             this.gradi = new MetroFramework.Controls.MetroLabel();
             this.btnRam = new MetroFramework.Controls.MetroButton();
             this.btnDisco = new MetroFramework.Controls.MetroButton();
+            this.btnGpu = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.pCPU)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
@@ -125,11 +126,22 @@ namespace Gestione_Attivita
             this.btnDisco.UseSelectable = true;
             this.btnDisco.Click += new System.EventHandler(this.btnDisco_Click_1);
             // 
+            // btnGpu
+            // 
+            this.btnGpu.Location = new System.Drawing.Point(692, 388);
+            this.btnGpu.Name = "btnGpu";
+            this.btnGpu.Size = new System.Drawing.Size(75, 23);
+            this.btnGpu.TabIndex = 7;
+            this.btnGpu.Text = "Gpu";
+            this.btnGpu.UseSelectable = true;
+            this.btnGpu.Click += new System.EventHandler(this.btnGpu_Click);
+            // 
             // Gestore
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(787, 448);
+            this.Controls.Add(this.btnGpu);
             this.Controls.Add(this.btnDisco);
             this.Controls.Add(this.btnRam);
             this.Controls.Add(this.gradi);
@@ -157,5 +169,6 @@ namespace Gestione_Attivita
         private MetroFramework.Controls.MetroLabel gradi;
         private MetroFramework.Controls.MetroButton btnRam;
         private MetroFramework.Controls.MetroButton btnDisco;
+        private MetroFramework.Controls.MetroButton btnGpu;
     }
 }
