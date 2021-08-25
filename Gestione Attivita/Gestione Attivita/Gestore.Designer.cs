@@ -43,6 +43,7 @@ namespace Gestione_Attivita
             this.btnRam = new MetroFramework.Controls.MetroButton();
             this.btnDisco = new MetroFramework.Controls.MetroButton();
             this.btnGpu = new MetroFramework.Controls.MetroButton();
+            this.metroRete = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.pCPU)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
@@ -136,11 +137,22 @@ namespace Gestione_Attivita
             this.btnGpu.UseSelectable = true;
             this.btnGpu.Click += new System.EventHandler(this.btnGpu_Click);
             // 
+            // metroRete
+            // 
+            this.metroRete.Location = new System.Drawing.Point(449, 388);
+            this.metroRete.Name = "metroRete";
+            this.metroRete.Size = new System.Drawing.Size(75, 23);
+            this.metroRete.TabIndex = 8;
+            this.metroRete.Text = "Rete";
+            this.metroRete.UseSelectable = true;
+            this.metroRete.Click += new System.EventHandler(this.metroRete_Click);
+            // 
             // Gestore
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(787, 448);
+            this.Controls.Add(this.metroRete);
             this.Controls.Add(this.btnGpu);
             this.Controls.Add(this.btnDisco);
             this.Controls.Add(this.btnRam);
@@ -170,5 +182,6 @@ namespace Gestione_Attivita
         private MetroFramework.Controls.MetroButton btnRam;
         private MetroFramework.Controls.MetroButton btnDisco;
         private MetroFramework.Controls.MetroButton btnGpu;
+        private MetroFramework.Controls.MetroButton metroRete;
     }
 }

@@ -63,5 +63,13 @@ namespace Gestione_Attivita
             Close();
             r.Show();
         }
+
+        private void metroRete_Click(object sender, EventArgs e)
+        {
+            Net r = new Net();
+            t.Abort();
+            Close();
+            r.Show();
+        }
     }
 }
