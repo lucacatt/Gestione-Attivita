@@ -83,17 +83,17 @@
     <Compile Include="Disco.Designer.cs">
       <DependentUpon>Disco.cs</DependentUpon>
     </Compile>
-    <Compile Include="Net.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Net.Designer.cs">
-      <DependentUpon>Net.cs</DependentUpon>
-    </Compile>
     <Compile Include="Gpu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Gpu.Designer.cs">
       <DependentUpon>Gpu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Net.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Net.Designer.cs">
+      <DependentUpon>Net.cs</DependentUpon>
     </Compile>
     <Compile Include="Ram.cs">
       <SubType>Form</SubType>
