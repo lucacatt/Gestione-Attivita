@@ -52,10 +52,9 @@ namespace Gestione_Attivita
             lblSpeed.Text = "Velocita " + nic.Speed.ToString();
             lblBytesReceived.Text = interfaceStats.BytesReceived.ToString();
             lblBytesSent.Text = interfaceStats.BytesSent.ToString();
-            lblUpload.Text = "Upload " + bytesSentSpeed.ToString() + " KB/s";
-            lblDownload.Text = "Download " + bytesReceivedSpeed.ToString() + " KB/s";
-            chart1.Series["RICEVUTI"].Points.AddY(lblBytesReceived.Text);
-            chart1.Series["INVIATI"].Points.AddY(lblBytesSent.Text);
+            lblUpload1.Text = bytesSentSpeed.ToString();
+            lblDownload1.Text = bytesReceivedSpeed.ToString();
+            chart1.Series["DOWNLOAD"].Points.AddY(lblDownload1.Text);
         }
 
         private void Net_Load_1(object sender, EventArgs e)

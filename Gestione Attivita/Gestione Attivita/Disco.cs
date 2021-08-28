@@ -31,8 +31,7 @@ namespace Gestione_Attivita
                 g = UpdateVisitor.GetDisckInfo();
         }
         public PerformanceCounter myCounter = new PerformanceCounter("PhysicalDisk", "% Disk Time", "_Total");
-        public Int32 j = 0;
-        public void Timer99_Tick(System.Object sender, System.EventArgs e)
+        public void Timer99_Tick(object sender, EventArgs e)
         {
             float fcpu = myCounter.NextValue();
             metroProgressBarDisco.Value = (int)fcpu;

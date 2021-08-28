@@ -30,10 +30,9 @@ namespace Gestione_Attivita
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.cmbInterface = new MetroFramework.Controls.MetroComboBox();
             this.lblBytesSent = new MetroFramework.Controls.MetroLabel();
             this.lblBytesReceived = new MetroFramework.Controls.MetroLabel();
@@ -45,6 +44,8 @@ namespace Gestione_Attivita
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.lblUpload1 = new MetroFramework.Controls.MetroLabel();
+            this.lblDownload1 = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,18 +100,18 @@ namespace Gestione_Attivita
             this.lblDownload.AutoSize = true;
             this.lblDownload.Location = new System.Drawing.Point(23, 171);
             this.lblDownload.Name = "lblDownload";
-            this.lblDownload.Size = new System.Drawing.Size(68, 19);
+            this.lblDownload.Size = new System.Drawing.Size(105, 19);
             this.lblDownload.TabIndex = 5;
-            this.lblDownload.Text = "Download";
+            this.lblDownload.Text = "Download [KB/s]";
             // 
             // lblUpload
             // 
             this.lblUpload.AutoSize = true;
             this.lblUpload.Location = new System.Drawing.Point(23, 190);
             this.lblUpload.Name = "lblUpload";
-            this.lblUpload.Size = new System.Drawing.Size(52, 19);
+            this.lblUpload.Size = new System.Drawing.Size(89, 19);
             this.lblUpload.TabIndex = 6;
-            this.lblUpload.Text = "Upload";
+            this.lblUpload.Text = "Upload [KB/s]";
             // 
             // timer
             // 
@@ -136,30 +137,45 @@ namespace Gestione_Attivita
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
             this.chart1.Location = new System.Drawing.Point(276, 95);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Legend = "Legend1";
-            series1.Name = "INVIATI";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Legend = "Legend1";
-            series2.Name = "RICEVUTI";
-            this.chart1.Series.Add(series1);
-            this.chart1.Series.Add(series2);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series3.Legend = "Legend1";
+            series3.Name = "DOWNLOAD";
+            this.chart1.Series.Add(series3);
             this.chart1.Size = new System.Drawing.Size(511, 300);
             this.chart1.TabIndex = 9;
+            // 
+            // lblUpload1
+            // 
+            this.lblUpload1.AutoSize = true;
+            this.lblUpload1.Location = new System.Drawing.Point(130, 190);
+            this.lblUpload1.Name = "lblUpload1";
+            this.lblUpload1.Size = new System.Drawing.Size(16, 19);
+            this.lblUpload1.TabIndex = 11;
+            this.lblUpload1.Text = "0";
+            // 
+            // lblDownload1
+            // 
+            this.lblDownload1.AutoSize = true;
+            this.lblDownload1.Location = new System.Drawing.Point(130, 171);
+            this.lblDownload1.Name = "lblDownload1";
+            this.lblDownload1.Size = new System.Drawing.Size(16, 19);
+            this.lblDownload1.TabIndex = 10;
+            this.lblDownload1.Text = "0";
             // 
             // Net
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblUpload1);
+            this.Controls.Add(this.lblDownload1);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
@@ -191,5 +207,7 @@ namespace Gestione_Attivita
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private MetroFramework.Controls.MetroLabel lblUpload1;
+        private MetroFramework.Controls.MetroLabel lblDownload1;
     }
 }
