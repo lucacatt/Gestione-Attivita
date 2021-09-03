@@ -25,14 +25,32 @@ namespace Gestione_Attivita
             while (true)
                 g = UpdateVisitor.GetCpuInfo();
         }
+        const float sampleFrequencyMillis = 1000;
 
+        protected object syncLock = new object();
+        protected float lastSample;
+        protected DateTime lastSampleTime;
         private void timer_Tick(object sender, EventArgs e)
         {
-            float fcpu = pCPU.NextValue();
-            metroProgressBarCpu.Value = (int)fcpu;
-            lblCpu.Text = string.Format("{0:0.00}%", fcpu);
-            chart1.Series["CPU"].Points.AddY(fcpu);
-            gradi.Text = g;
+            //float fcpu = pCPU.NextValue();
+            //metroProgressBarCpu.Value = (int)fcpu;
+            //lblCpu.Text = string.Format("{0:0.00}%", fcpu);
+            //chart1.Series["CPU"].Points.AddY(fcpu);
+            //gradi.Text = g;
+            if ((DateTime.UtcNow - lastSampleTime).TotalMilliseconds > sampleFrequencyMillis)
+            {
+                lock (syncLock)
+                {
+                    if ((DateTime.UtcNow - lastSampleTime).TotalMilliseconds > sampleFrequencyMillis)
+                    {
+                        lastSample = pCPU.NextValue();
+                        lastSampleTime = DateTime.UtcNow;
+                    }
+                }
+            }
+            metroProgressBarCpu.Value = (int)lastSample;
+            lblCpu.Text = string.Format("{0:0.00}%", lastSample);
+            chart1.Series["CPU"].Points.AddY(lastSample);
         }
 
         private void Gestore_Load(object sender, EventArgs e)

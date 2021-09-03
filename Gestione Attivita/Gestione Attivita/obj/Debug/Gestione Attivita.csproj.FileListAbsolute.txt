@@ -21,7 +21,6 @@ L:\github\Gestione-Attivita\Gestione Attivita\Gestione Attivita\bin\Debug\Gestio
 L:\github\Gestione-Attivita\Gestione Attivita\Gestione Attivita\bin\Debug\MetroFramework.Design.dll
 L:\github\Gestione-Attivita\Gestione Attivita\Gestione Attivita\bin\Debug\MetroFramework.dll
 L:\github\Gestione-Attivita\Gestione Attivita\Gestione Attivita\bin\Debug\MetroFramework.Fonts.dll
-L:\github\Gestione-Attivita\Gestione Attivita\Gestione Attivita\obj\Debug\Gestione Attivita.csprojAssemblyReference.cache
 L:\github\Gestione-Attivita\Gestione Attivita\Gestione Attivita\obj\Debug\MainWindow.g.cs
 L:\github\Gestione-Attivita\Gestione Attivita\Gestione Attivita\obj\Debug\App.g.cs
 L:\github\Gestione-Attivita\Gestione Attivita\Gestione Attivita\obj\Debug\Gestione Attivita_MarkupCompile.cache
@@ -39,3 +38,4 @@ L:\github\Gestione-Attivita\Gestione Attivita\Gestione Attivita\obj\Debug\Gestio
 L:\github\Gestione-Attivita\Gestione Attivita\Gestione Attivita\obj\Debug\Gestione_Attivita.Disco.resources
 L:\github\Gestione-Attivita\Gestione Attivita\Gestione Attivita\obj\Debug\Gestione_Attivita.Gpu.resources
 L:\github\Gestione-Attivita\Gestione Attivita\Gestione Attivita\obj\Debug\Gestione_Attivita.Net.resources
+L:\github\Gestione-Attivita\Gestione Attivita\Gestione Attivita\obj\Debug\Gestione Attivita.csproj.AssemblyReference.cache
