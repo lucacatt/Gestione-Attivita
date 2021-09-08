@@ -44,5 +44,35 @@ namespace Gestione_Attivita
             t = new Thread(start);
             t.Start();
         }
+
+        private void btnRam_Click(object sender, EventArgs e)
+        {
+            Timer99.Stop();
+            Ram r = new Ram();
+            Close();
+            r.Show();
+        }
+        private void btnGpu_Click(object sender, EventArgs e)
+        {
+            Timer99.Stop();
+            Gpu r = new Gpu();
+            Close();
+            r.Show();
+        }
+        private void btnRete_Click(object sender, EventArgs e)
+        {
+            Timer99.Stop();
+            Net r = new Net();
+            Close();
+            r.Show();
+        }
+
+        private void btnCpu_Click(object sender, EventArgs e)
+        {
+            Timer99.Stop();
+            Gestore r = new Gestore();
+            Close();
+            r.Show();
+        }
     }
 }

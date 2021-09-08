@@ -39,5 +39,31 @@ namespace Gestione_Attivita
             t = new Thread(start);
             t.Start();
         }
+
+        private void btnDisco_Click(object sender, EventArgs e)
+        {
+            Disco r = new Disco();
+            Close();
+            r.Show();
+        }
+        private void btnGpu_Click(object sender, EventArgs e)
+        {
+            Gpu r = new Gpu();
+            Close();
+            r.Show();
+        }
+        private void btnRete_Click(object sender, EventArgs e)
+        {
+            Net r = new Net();
+            Close();
+            r.Show();
+        }
+
+        private void btnCpu_Click(object sender, EventArgs e)
+        {
+            Gestore r = new Gestore();
+            Close();
+            r.Show();
+        }
     }
 }

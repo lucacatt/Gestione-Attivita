@@ -36,7 +36,7 @@ namespace Gestione_Attivita
             //metroProgressBarCpu.Value = (int)fcpu;
             //lblCpu.Text = string.Format("{0:0.00}%", fcpu);
             //chart1.Series["CPU"].Points.AddY(fcpu);
-            //gradi.Text = g;
+            gradi.Text = g;
             if ((DateTime.UtcNow - lastSampleTime).TotalMilliseconds > sampleFrequencyMillis)
             {
                 lock (syncLock)

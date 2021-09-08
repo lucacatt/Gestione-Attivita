@@ -52,6 +52,37 @@ namespace Gestione_Attivita
             chart1.Series["GPU"].Points.AddY(fcpu);
             lblInfo.Text = g;
         }
+
+        private void btnRam_Click(object sender, EventArgs e)
+        {
+            Ram r = new Ram();
+            t.Abort();
+            Close();
+            r.Show();
+        }
+        private void btnDisco_Click(object sender, EventArgs e)
+        {
+            Disco r = new Disco();
+            t.Abort();
+            Close();
+            r.Show();
+        }
+
+        private void btnGpu_Click(object sender, EventArgs e)
+        {
+            Gestore r = new Gestore();
+            t.Abort();
+            Close();
+            r.Show();
+        }
+
+        private void metroRete_Click(object sender, EventArgs e)
+        {
+            Net r = new Net();
+            t.Abort();
+            Close();
+            r.Show();
+        }
     }
 }
 

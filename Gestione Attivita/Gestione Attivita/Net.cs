@@ -61,5 +61,30 @@ namespace Gestione_Attivita
         {
 
         }
+        private void btnRam_Click(object sender, EventArgs e)
+        {
+            Ram r = new Ram();
+            Close();
+            r.Show();
+        }
+        private void btnGpu_Click(object sender, EventArgs e)
+        {
+            Gpu r = new Gpu();
+            Close();
+            r.Show();
+        }
+        private void btnDisco_Click(object sender, EventArgs e)
+        {
+            Disco r = new Disco();
+            Close();
+            r.Show();
+        }
+
+        private void btnCpu_Click(object sender, EventArgs e)
+        {
+            Gestore r = new Gestore();
+            Close();
+            r.Show();
+        }
     }
 }

@@ -35,7 +35,5 @@ namespace Gestione_Attivita
             g.Show();
             Hide();
         }
-        //https://www.youtube.com/watch?v=Lg_geJrATrc&ab_channel=FoxLearn tutorial https://stackoverflow.com/questions/1195112/how-can-i-get-the-cpu-temperature http://www.lattepanda.com/topic-f11t3004.html
-
     }
 }
